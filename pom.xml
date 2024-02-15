@@ -94,8 +94,18 @@
 					<target>${jdk.version}</target>
 				</configuration>
 			</plugin>
-
+<plugin>
+            <groupId>org.sonarsource.scanner.maven</groupId>
+            <artifactId>sonar-maven-plugin</artifactId>
+            <version>3.10.0.2594</version>
+        </plugin>
 			
+		<plugin>
+    <groupId>org.codehaus.mojo</groupId>
+    <artifactId>sonar-maven-plugin</artifactId>
+    <version>3.10.0.2594</version>
+    <!-- Other configuration options -->
+</plugin>	
 		</plugins>
 	</build>
 	<repositories>
