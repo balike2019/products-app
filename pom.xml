@@ -66,6 +66,27 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+<!-- https://mvnrepository.com/artifact/org.sonarsource.sonarqube/sonar-plugin-api -->
+<dependency>
+    <groupId>org.sonarsource.sonarqube</groupId>
+    <artifactId>sonar-plugin-api</artifactId>
+    <version>9.4.0.54424</version>
+    <scope>provided</scope>
+</dependency>
+<dependency>
+    <groupId>org.sonarsource.scanner.gradle</groupId>
+    <artifactId>sonarqube-gradle-plugin</artifactId>
+    <version>3.3</version>
+    <scope>runtime</scope>
+</dependency>
+	<!-- https://mvnrepository.com/artifact/org.codehaus.sonar/sonar-plugin-api -->
+<dependency>
+    <groupId>org.codehaus.sonar</groupId>
+    <artifactId>sonar-plugin-api</artifactId>
+    <version>5.1</version>
+    <scope>provided</scope>
+</dependency>
+	
 	</dependencies>
 
 	<build>
@@ -86,18 +107,7 @@
 				</configuration>
 			</plugin>
 
-<plugin>
-            <groupId>org.sonarsource.scanner.maven</groupId>
-            <artifactId>sonar-maven-plugin</artifactId>
-            <version>3.8.6</version>
-        </plugin>
-			
-		<plugin>
-    <groupId>org.codehaus.mojo</groupId>
-    <artifactId>sonar-maven-plugin</artifactId>
-    <version>3.8.6</version>
-    <!-- Other configuration options -->
-</plugin>	
+	
 		</plugins>
 	</build>
 	<repositories>
