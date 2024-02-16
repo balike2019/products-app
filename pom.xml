@@ -76,24 +76,6 @@
 
 	<build>
 		<finalName>product-web-app</finalName>
-		<groupId>org.projectlombo<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<image>
-						<builder>paketobuildpacks/builder-jammy-base:latest</builder>
-					</image>
-					<excludes>
-						<exclude>
-							k</groupId>
-							<artifactId>lombok</artifactId>
-						</exclude>
-					</excludes>
-				</configuration>
-			</plugin>
-			<plugin>
-    <finalName>maven-web-app</finalName>
 		
 		<plugins>
 			<plugin>
@@ -129,6 +111,14 @@
 					<wtpContextName>maven-web-application</wtpContextName>
 				</configuration>
 			</plugin>
+			
+</plugins>
+	</build>
+	
+	
+					
+						
+					
 </plugins>
 
 	
